@@ -1,13 +1,26 @@
 # Fourmere Gate 3 Supplier-Credibility Site — Systems Implementation Record
 
-Status: BUILD COMPLETE / NOT CLEARED FOR PUBLICATION
+Status: V2 BUILD COMPLETE / NOT CLEARED FOR PUBLICATION
 Date: 2026-09-18
 Owner: Project Menice Systems & Automation
 
+## V2 design pass
+The second visual pass was rebuilt after a Mobbin-led reference review focused on premium B2B / technical website patterns.
+
+Reference-pattern research included:
+- large editorial B2B hero layouts with restrained navigation and dual CTAs;
+- numbered operating-principle rows instead of generic feature-card grids;
+- dark partnership sections using concise commercial benefits;
+- structured commercial-criteria lists;
+- minimal email-led closing CTAs;
+- restrained corporate/legal footers.
+
+The implementation is original Fourmere work. Mobbin references informed hierarchy, rhythm and layout patterns rather than being copied.
+
 ## Scope implemented
 - Static, single-page credibility site only.
-- Anchored navigation: Home, About, Trade Partners, Contact.
-- Approved supplier-facing copy incorporated.
+- Anchored navigation: Approach, About, Trade partners.
+- Approved supplier-facing copy retained and reorganised for stronger hierarchy.
 - Legal identity presentation uses Exilier Limited, company number 16809898, registered in England and Wales, registered office 33 Copper Beech Road, Nuneaton, England, CV10 9FB.
 - Contact route is `mailto:aster@fourmere.co.uk` only.
 - No contact form.
@@ -38,8 +51,8 @@ Potential processing introduced by hosting:
 - Mail contact route: visitor email client -> mail infrastructure -> `aster@fourmere.co.uk`; the website itself does not proxy, store or enrich the message.
 
 ## Controls
-- `robots` is currently `noindex,nofollow` to prevent accidental indexing during pre-publication review.
-- `privacy.html` is a non-publication placeholder and must be replaced with Finance & Governance-approved content before launch.
+- `robots` remains `noindex,nofollow` to prevent accidental indexing during pre-publication review.
+- `privacy.html` remains a non-publication placeholder and must be replaced with Finance & Governance-approved content before launch.
 - No DNS, production hosting or public deployment has been performed.
 
 ## Required pre-publication verification
