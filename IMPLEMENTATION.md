@@ -69,7 +69,7 @@ Still to verify from the actual Hestia/VPS configuration:
 No application-layer database or event store exists for the site.
 
 ## Controls
-- `robots` remains `noindex,nofollow` during pre-publication review.
+- Founder approved homepage discoverability on 19 September 2026. `index.html` is configured `index,follow`, with a canonical URL plus `robots.txt` and `sitemap.xml`. The privacy holding page remains `noindex,nofollow` until replaced by an approved production notice.
 - `privacy.html` remains a non-publication placeholder and must be replaced with Finance & Governance-approved production content before publication.
 - Creation of the Hestia domain/vhost does not constitute public-readiness approval.
 - Do not make a global/shared Hestia template change for Fourmere.
@@ -84,7 +84,7 @@ No application-layer database or event store exists for the site.
 6. Close the outstanding supplier-facing claims review/correction.
 7. Finance & Governance post-build claims/legal/privacy verification.
 8. Director final rendered/public-readiness review.
-9. Only then remove `noindex,nofollow` if explicitly authorised and publish.
+9. Homepage indexability is already Founder-authorised; retain that setting unless reversed. Governance completion still requires the privacy/claims/Director checks above.
 
 ## Shared-host verification
 Before and after any web-server configuration change:
