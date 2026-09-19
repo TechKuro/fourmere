@@ -43,7 +43,7 @@ nav a:hover { text-decoration: underline; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 64px; align-items: center; }
 .kicker { margin: 0 0 25px; color: var(--accent); text-transform: uppercase; letter-spacing: .14em; font-size: .69rem; font-weight: 700; line-height: 1.6; }
 .hero h1, .section h2, .relationship-block h2, .contact-section h2, .privacy-page h1 { font-family: var(--serif); font-weight: 400; letter-spacing: -.05em; }
-.hero h1 { font-size: clamp(3.6rem, 5.4vw, 4.8rem); line-height: 1.02; margin: 0; text-wrap: initial; }
+.hero h1 { font-size: clamp(3.3rem, 4.6vw, 4.15rem); line-height: 1.06; margin: 0; text-wrap: initial; }
 .hero h1 em { display: block; font-weight: 400; color: var(--accent); }
 .hero-copy { font-size: 1.0625rem; max-width: 590px; color: var(--ink-soft); margin: 32px 0 0; line-height: 1.75; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 32px; }
@@ -116,7 +116,7 @@ nav a:hover { text-decoration: underline; }
 
 @media (max-width: 1100px) {
   .hero-grid { gap: 40px; }
-  .hero h1 { font-size: 3.6rem; }
+  .hero h1 { font-size: 3.3rem; }
   .section-heading, .relationship-grid, .about-grid, .contact-grid { gap: 54px; }
 }
 @media (max-width: 980px) {
@@ -144,7 +144,7 @@ nav a:hover { text-decoration: underline; }
   .nav-cta { gap: 10px; }
   .hero { padding: 48px 0; }
   .hero-grid { grid-template-columns: 1fr; gap: 36px; }
-  .hero h1 { font-size: clamp(2.9rem, 10.5vw, 4.7rem); line-height: 1.06; }
+  .hero h1 { font-size: clamp(2.35rem, 9.6vw, 3.6rem); line-height: 1.08; }
   .hero-copy { margin-top: 24px; font-size: 1rem; }
   .kicker { font-size: .625rem; letter-spacing: .12em; margin-bottom: 22px; }
   .signal-grid { grid-template-columns: 1fr; }
@@ -178,12 +178,12 @@ nav a:hover { text-decoration: underline; }
   :root { --muted: #303633; --accent: #304c3b; --line: #858a81; }
 }
 @media (forced-colors: active) {
-  .button, .status-card { border: 1px solid CanvasText; }
+  .button, .trade-details { border: 1px solid CanvasText; }
 }
 
-/* Locally served editorial material studies; no text overlays or product claims. */
+/* Local editorial still lifes about product selection and information. */
 .hero-image, .relationship-image { margin: 0; min-width: 0; overflow: hidden; background: var(--paper-2); }
-.hero-image { aspect-ratio: 4 / 5; }
+.hero-image { width: 100%; aspect-ratio: 4 / 5; }
 .hero-image img, .relationship-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .relationship-image { aspect-ratio: 3 / 2; }
 .relationship-grid { grid-template-columns: 1fr 1fr; gap: 72px; }
@@ -196,9 +196,17 @@ nav a:hover { text-decoration: underline; }
 .trade-benefits .number { padding-top: 4px; }
 .trade-benefits h4 { margin: 0; font-size: 1.1rem; font-weight: 500; }
 .trade-benefits p { grid-column: 2; margin: 0; font-size: .9375rem; color: var(--muted); }
-.criteria-heading { border-top: 1px solid var(--line); padding-top: 48px; }
-.criteria-heading .subheading { margin-bottom: 12px; }
-.criteria-heading > p { color: var(--muted); font-size: .9375rem; margin: 0 0 28px; }
+.trade-details { border-block: 1px solid var(--ink); }
+.trade-details summary { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 26px 0; cursor: pointer; list-style: none; }
+.trade-details summary::-webkit-details-marker { display: none; }
+.trade-details summary h3 { margin: 0; font-family: var(--serif); font-size: clamp(1.4rem, 2.4vw, 1.8rem); font-weight: 400; line-height: 1.25; letter-spacing: -.025em; }
+.trade-details summary:hover h3 { text-decoration: underline; text-underline-offset: 5px; }
+.disclosure-icon { position: relative; flex: 0 0 28px; height: 28px; border: 1px solid var(--accent); border-radius: 50%; }
+.disclosure-icon::before, .disclosure-icon::after { content: ""; position: absolute; background: currentColor; inset: 12px 7px; }
+.disclosure-icon::after { transform: rotate(90deg); }
+.trade-details[open] .disclosure-icon::after { display: none; }
+.criteria-content { padding-bottom: 28px; }
+.criteria-content > p:first-child { color: var(--muted); font-size: .9375rem; margin: 0 0 28px; }
 .trade-invitation { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; border-top: 1px solid var(--ink); margin-top: 56px; padding-top: 36px; }
 .trade-invitation h3 { font-family: var(--serif); font-size: 2.5rem; font-weight: 400; line-height: 1.15; letter-spacing: -.035em; margin: 0; max-width: 400px; }
 .trade-invitation p { margin: 0; font-size: .9375rem; color: var(--muted); }
