@@ -70,3 +70,9 @@ Potential processing introduced by hosting:
 - Trade-account applications.
 - Any third-party outbound message.
 - Gate 4/5/6 functionality.
+
+## 19 September 2026 — implementation refinement and review verification
+
+Completed the V2 refinement described in the Codex handoff: editorial typography and spacing, a clearer supplier-validation status panel, readable supplier-benefit rows, improved mobile layouts, explicit keyboard focus and a styled privacy holding page. The approved proposition, all 13 trade topics, legal identity and publication controls are retained.
+
+Desktop/mobile renders, breakpoint overflow measurements, keyboard traversal, anchor/link checks, text contrast measurements and source audits are recorded in `docs/VERIFICATION_V2.md`. No production dependency was added. No deployment or publication approval is implied by completion of this review build.
