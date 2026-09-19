@@ -1,70 +1,110 @@
-# Codex Handoff — Fourmere V2
+# Codex Handoff — Fourmere V3
 
 Date: 19 September 2026  
 Repository: `TechKuro/fourmere`  
 Branch: `main`  
-Status: DESIGN HANDOFF READY / NOT CLEARED FOR PUBLICATION
+Status: POSITIONING CORRECTION ACTIVE / REVIEW BUILD ONLY / NOT CLEARED FOR PUBLICATION
 
 ## Objective
-Take the current Fourmere V2 static implementation and turn it into a polished, production-quality review build that faithfully follows `docs/DESIGN_V2.md` and the linked Figma review file.
 
-This is a refinement/implementation task, not permission to expand product scope.
+Refine the existing Fourmere V2 implementation into a polished V3 review build that preserves the strong visual system while applying the 19 September Founder/Director public-positioning correction.
+
+This is a Gate 3 supplier-credibility asset, not permission to expand into an ecommerce store.
+
+The key correction is commercial tone: Fourmere must present confidently in present-tense language as a real UK specialist retailer/business. Internal Project Menice validation status must not be used as public marketing copy merely because it is internally true.
 
 ## Start here
+
 Read, in this order:
+
 1. `AGENTS.md`
-2. `docs/DESIGN_V2.md`
-3. `IMPLEMENTATION.md`
-4. `index.html`
-5. `styles.css`
-6. `privacy.html`
+2. `docs/POSITIONING_V3.md`
+3. the Growth-approved Fourmere copy pack, once present in the repository
+4. `docs/DESIGN_V2.md`
+5. `IMPLEMENTATION.md`
+6. `index.html`
+7. `styles.css`
+8. `privacy.html`
 
 Visual reference:
 https://www.figma.com/design/sALZCt0EFcMfX0Nxn5sFWH
 
+If copy-specific guidance in `docs/DESIGN_V2.md` or the current implementation conflicts with `docs/POSITIONING_V3.md`, V3 wins.
+
 ## Current implementation
-The repository already contains the V2 content and visual direction in plain HTML/CSS.
 
-Current files:
-- `index.html` — approved Gate 3 page structure and supplier-facing copy
-- `styles.css` — current V2 visual system and responsive layout
-- `privacy.html` — deliberate non-publication placeholder
-- `IMPLEMENTATION.md` — systems/privacy implementation record
+The repository already contains a useful V2 static implementation in plain HTML/CSS.
 
-Do not throw the implementation away merely to introduce a framework. A framework is not required for this page.
+Treat:
+- `styles.css` and the V2 visual hierarchy as the implementation baseline;
+- `index.html` structure as reusable where appropriate;
+- the existing public copy as **working/stale copy, not final approved wording**;
+- `privacy.html` as a deliberate non-publication placeholder;
+- `IMPLEMENTATION.md` as the systems/privacy implementation record.
 
-## Build task
-Refine the existing page so the implementation feels intentional and finished across desktop and mobile.
+Do not throw away working visual/technical implementation merely to introduce a framework.
 
-Priorities:
-1. Match the Figma/Mobbin-led hierarchy and spacing more closely.
-2. Improve typography scale and line length where the rendered page feels awkward.
-3. Make the hero/status composition strong at wide desktop widths.
-4. Keep the numbered approach rows editorial rather than card-heavy.
-5. Make the dark supplier-relationship section feel balanced and easy to scan.
-6. Make the 13-point trade criteria readable without feeling like a dense terms page.
-7. Ensure the closing email CTA is strong but understated.
-8. Polish responsive behaviour around 980px, 720px and small mobile widths.
-9. Preserve semantic/accessibility quality.
-10. Keep the page very fast and dependency-free.
+## Positioning correction to implement
 
-## Content rules
-Treat the current approved proposition as constrained content.
+Remove or replace public-facing internal-status language when the approved copy provides the alternative.
 
-Do not add or imply:
+In particular, do not present:
+- “Current phase — Supplier validation”;
+- Project Menice gate labels;
+- “currently validating”;
+- “being built”;
+- “venture” where “retailer” or “business” is the accurate public description;
+- “we aim to” / “we intend to” where a truthful present-tense statement is available.
+
+Working positioning authority:
+
+> Fourmere is a UK specialist retailer focused on professional and technical products.
+
+The Growth Strategy department owns the market-facing copy pass. **Do not invent a new commercial story while waiting for that copy.**
+
+If the Growth-approved copy pack has not yet been committed, you may:
+- remove clearly superseded public validation-status modules/labels;
+- prepare the structure for the new copy;
+- refine visual/responsive/accessibility implementation;
+- leave clearly copy-dependent sections unchanged for the next review.
+
+Do not fabricate placeholder claims just to complete a section.
+
+## Truth boundary
+
+Confidence is authorised. Fabrication is not.
+
+Do not add or imply unsupported:
 - existing supplier partnerships;
-- customers or sales history;
-- authorised-dealer status;
+- customers, orders, turnover or sales history;
+- authorised-dealer or official-partner status;
+- supplier logos or named-brand affiliation;
 - stock ownership;
 - warehouse or fulfilment capability;
 - delivery times;
 - warranty/returns promises;
-- product/category expertise not already supported;
-- category-specific packaging positioning in the public headline.
+- team size, offices, facilities or scale;
+- testimonials, reviews or accreditations;
+- product/category expertise not supported by evidence.
 
-You may make small copy edits only where needed for grammar, accessibility or layout. Do not materially strengthen claims.
+## Build task
+
+Preserve and improve the V2 visual strengths while applying the corrected positioning.
+
+Priorities:
+1. Remove the public supplier-validation/status framing.
+2. Preserve the editorial B2B / technical-retailer visual direction.
+3. Improve typography scale, line length and spacing where rendered output needs polish.
+4. Keep the numbered approach rows editorial rather than generic feature cards.
+5. Keep the supplier-relationship section commercially strong and easy to scan.
+6. Ensure Trade Partners content feels like a supplier proposition, not an internal due-diligence checklist.
+7. Keep the closing trade email CTA strong and professional.
+8. Polish responsive behaviour around 980px, 720px and small mobile widths.
+9. Preserve semantic/accessibility quality.
+10. Keep the page fast and dependency-light.
 
 ## Technical rules
+
 Keep:
 - plain HTML/CSS unless there is a compelling technical reason otherwise;
 - no JavaScript unless necessary for a specific accessibility/usability requirement;
@@ -73,20 +113,26 @@ Keep:
 - no analytics/pixels;
 - no cookies/localStorage/sessionStorage;
 - no APIs/database;
-- mailto-only contact;
-- `noindex,nofollow`;
+- mailto-only contact to `aster@fourmere.co.uk`;
+- `noindex,nofollow` until publication is separately approved;
 - privacy holding page clearly marked as not publication-ready.
 
 Do not deploy or alter DNS.
 
 ## Legal identity
-Required public trading disclosure:
+
+Retain the currently approved legal disclosure exactly unless Finance & Governance supplies a replacement:
+
 Fourmere is operated by Exilier Limited, company number 16809898, registered in England and Wales. Registered office: 33 Copper Beech Road, Nuneaton, England, CV10 9FB.
 
-Do not invent any additional legal status or trading claim.
+Do not invent additional legal status or trading claims.
 
 ## Definition of done
-A change is ready for Aster/Founder review when:
+
+A V3 change is ready for Aster/Founder review when:
+- V3 positioning authority has been followed;
+- no public “Current phase — Supplier validation” or equivalent internal gate/status block remains;
+- Growth-approved copy has been used wherever available, without unsupported strengthening;
 - desktop render at ~1440px is visually polished;
 - mobile render at ~390px is visually polished;
 - no horizontal overflow exists;
@@ -102,11 +148,13 @@ A change is ready for Aster/Founder review when:
 - no deployment was performed.
 
 ## Expected handback
-When finished, provide:
-- concise summary of design/implementation changes;
-- list of files changed;
-- desktop/mobile verification notes;
-- any unresolved visual or accessibility issues;
-- confirmation that no deployment, tracking or scope expansion occurred.
 
-The next decision belongs to Aster/Project Menice review, not to Codex.
+When finished, provide:
+- concise summary of positioning/design/implementation changes;
+- list of files changed;
+- exact copy source used;
+- desktop/mobile verification notes;
+- any unresolved copy, visual, legal or accessibility issues;
+- confirmation that no deployment, tracking, supplier outreach or scope expansion occurred.
+
+The next publication decision belongs to Aster / Project Menice Director review and the Founder release controls.
