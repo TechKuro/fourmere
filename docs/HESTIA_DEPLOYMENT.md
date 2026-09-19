@@ -99,7 +99,7 @@ Safe default sequence:
 7. Do **not** run a bulk Hestia rebuild for all domains.
 8. If a web-server configuration change is genuinely required, validate syntax before reload.
 9. Prefer graceful reload over full service restart where the platform supports it.
-10. Verify Fourmere locally/on-origin.
+10. Verify Fourmere locally/on-origin. On this host Nginx listens on the VPS address `51.195.20.205:80/443`, not `127.0.0.1:80`, so use a Host-header or `curl --resolve` check against `51.195.20.205`; a failed `curl http://127.0.0.1/` does not indicate a Fourmere deployment failure.
 11. Re-check Aster Lab and other production health immediately after any web-server reload.
 12. Roll back Fourmere-only files/config if verification fails.
 
