@@ -1,7 +1,9 @@
 # Fourmere V2 — Design Specification
 
-Status: CURRENT DESIGN DIRECTION / GATE 3
+Status: CURRENT VISUAL/LAYOUT BASELINE / COPY-SPECIFIC V2 GUIDANCE SUPERSEDED WHERE NOTED
 Last updated: 19 September 2026
+
+> **V3 positioning correction:** Public copy is governed by `docs/POSITIONING_V3.md` and the Growth-approved copy pack. Earlier V2 wording that foregrounds Fourmere as a “venture”, “being built”, “currently in supplier validation”, or displays “Current phase — Supplier validation” is superseded. Keep the V2 visual system and information hierarchy where useful; do not preserve stale copy merely because it appears below.
 
 ## Figma review file
 Fourmere V2 — Mobbin-led Gate 3  
@@ -14,7 +16,7 @@ The Figma file contains:
 Figma is a review/reference surface. The browser implementation remains the authority for exact responsive behaviour and must retain the technical/privacy constraints in this repository.
 
 ## Design thesis
-Fourmere should feel like a credible specialist technical retailer being built deliberately, not a generic dropshipping storefront and not a startup-SaaS landing page.
+Fourmere should feel like a credible, active specialist technical retailer: commercially confident, considered and professional, not a generic dropshipping storefront and not a startup-SaaS landing page.
 
 Core character:
 - editorial B2B;
@@ -25,7 +27,7 @@ Core character:
 - no fabricated social proof.
 
 The desired reaction from a manufacturer or distributor checking the domain is:
-"This is a serious, considered UK retail venture worth replying to."
+"This is a serious UK specialist retail business worth replying to."
 
 ## Mobbin-led reference research
 The V2 pass used real interface patterns as reference material. These examples informed hierarchy and layout rather than being copied.
@@ -81,13 +83,12 @@ Primary headline:
 "Focused retail for considered products."
 
 Support the proposition with:
-- UK specialist ecommerce venture kicker;
+- a concise UK specialist-retailer kicker;
 - concise paragraph explaining professional/technical product focus;
 - primary trade-partnership CTA;
-- secondary "How we work" CTA;
-- a compact "Current phase — Supplier validation" status module.
+- secondary "How we work" CTA.
 
-The status module is important because it creates credibility through transparency rather than pretending Fourmere is already a mature retailer.
+Do **not** include a public “Current phase — Supplier validation” module or other Project Menice gate/status language. V3 credibility should come from confident business positioning, professional presentation, legal identity and a coherent supplier proposition — not disclosure of internal validation mechanics.
 
 ### 3. Operating signals
 A narrow strip communicating:
@@ -123,10 +124,12 @@ This section should feel commercially credible, not salesy.
 
 ### 6. About Fourmere
 Large editorial heading plus two-column structure on desktop.
-Explain:
-- UK-based venture;
-- currently in supplier validation;
-- deliberate validation before full launch.
+Explain Fourmere in market-facing terms using the V3/Growth-approved copy:
+- UK specialist retailer/business;
+- focus on professional and technical products;
+- specialist-retail approach and commercial principles.
+
+Do not use the About section to publish internal Gate 3 / supplier-validation status.
 
 Supporting beliefs:
 - Focused, not generalist
@@ -233,4 +236,4 @@ Do not introduce:
 - generic Shopify/DTC aesthetics;
 - excessive gradients, glassmorphism or decorative animation.
 
-Trust must come from restraint, clarity, identity and transparent commercial positioning.
+Trust must come from restraint, clarity, identity, confident commercial positioning and truthful claims. Transparency does not require publishing internal validation/gate status.
