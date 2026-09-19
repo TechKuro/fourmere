@@ -1,6 +1,6 @@
 # Fourmere Gate 3 Supplier-Credibility Site — Systems Implementation Record
 
-Status: V2 BUILD COMPLETE / NOT CLEARED FOR PUBLICATION
+Status: V3 REVIEW BUILD / NOT CLEARED FOR PUBLICATION
 Date: 2026-09-18
 Owner: Project Menice Systems & Automation
 
@@ -20,7 +20,7 @@ The implementation is original Fourmere work. Mobbin references informed hierarc
 ## Scope implemented
 - Static, single-page credibility site only.
 - Anchored navigation: Approach, About, Trade partners.
-- Approved supplier-facing copy retained and reorganised for stronger hierarchy.
+- Growth-approved V3 supplier-facing copy integrated and reorganised for stronger hierarchy.
 - Legal identity presentation uses Exilier Limited, company number 16809898, registered in England and Wales, registered office 33 Copper Beech Road, Nuneaton, England, CV10 9FB.
 - Contact route is `mailto:aster@fourmere.co.uk` only.
 - No contact form.
@@ -31,7 +31,7 @@ The implementation is original Fourmere work. Mobbin references informed hierarc
 - No JavaScript.
 - No third-party scripts.
 - No external fonts.
-- No images or third-party media.
+- Two locally served, generated editorial material studies; no remote image or third-party media dependency.
 - No cookies.
 - No localStorage/sessionStorage.
 - No advertising pixels.
@@ -71,8 +71,14 @@ Potential processing introduced by hosting:
 - Any third-party outbound message.
 - Gate 4/5/6 functionality.
 
-## 19 September 2026 — implementation refinement and review verification
+## 19 September 2026 — V2 implementation refinement and review verification
 
 Completed the V2 refinement described in the Codex handoff: editorial typography and spacing, a clearer supplier-validation status panel, readable supplier-benefit rows, improved mobile layouts, explicit keyboard focus and a styled privacy holding page. The approved proposition, all 13 trade topics, legal identity and publication controls are retained.
 
 Desktop/mobile renders, breakpoint overflow measurements, keyboard traversal, anchor/link checks, text contrast measurements and source audits are recorded in `docs/VERIFICATION_V2.md`. No production dependency was added. No deployment or publication approval is implied by completion of this review build.
+
+## 19 September 2026 — V3 copy and imagery pass
+
+Integrated the Growth Strategy copy pack from the supplied Google Doc. Public copy now uses confident present-tense specialist-retailer language, and the internal supplier-validation module/status framing has been removed. The 14 trade-discussion topics are retained as a commercial discussion list, including payment terms and minimum commitments as separate topics.
+
+Added two locally served WebP material studies under `assets/`, with responsive `srcset` variants. The images are abstract editorial studies of brushed metal, mineral surface and muted green material; they do not depict Fourmere stock, suppliers, premises or operational capability. Production HTML references only relative paths.
