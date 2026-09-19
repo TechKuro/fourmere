@@ -60,7 +60,7 @@ Do not clone the whole Git repository into the public document root.
 Only publish the browser artifacts required by the site, currently:
 - `index.html`
 - `styles.css`
-- `privacy.html` only after Finance & Governance approves the production notice
+- `privacy.html` — Fourmere-specific production-policy draft adapted from Exilier Limited's existing privacy structure; Finance & Governance verification remains required before governance completion
 - referenced local files under `assets/`
 
 Repository-only files such as `AGENTS.md`, `README.md`, `docs/`, Git metadata and internal implementation records must not be web-accessible.
@@ -114,9 +114,7 @@ Fourmere remains a review build until the existing Project Menice dependencies a
 - Finance & Governance post-build claims/legal/privacy verification;
 - Director rendered/public-readiness review.
 
-Keep `noindex,nofollow` while the review build is reachable.
-
-If the domain must be internet-reachable before public-readiness approval, prefer an access control at the Fourmere/domain boundary rather than weakening global server security or changing shared templates.
+Founder approved search-engine discoverability on 19 September 2026. The public homepage and production privacy page are configured `index,follow`; `robots.txt` permits crawling and `sitemap.xml` lists both pages. This discoverability decision does not waive the remaining Finance & Governance and Director release checks.
 
 ## Privacy/logging evidence required
 
@@ -159,8 +157,8 @@ A rollback must not revert or restart unrelated applications.
 - installing a new web stack;
 - adding Docker/Node/PM2 for Fourmere;
 - enabling analytics, ad pixels, cookies or third-party scripts;
-- publishing the current privacy holding page as a final privacy notice;
-- removing `noindex,nofollow` before publication approval.
+- replacing or materially weakening the Fourmere privacy policy without Finance & Governance review;
+- reversing the Founder-approved homepage discoverability setting without a new decision.
 
 ## Success criteria
 
