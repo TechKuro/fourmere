@@ -4,7 +4,7 @@ Gate 3 supplier-credibility site for a UK specialist ecommerce venture.
 
 ## Current status
 
-V3 review build. The site has a selected hosting target on the existing Hestia-managed VPS, but it is **not cleared for public publication**.
+V3 review build with Founder-approved homepage discoverability. The site has a selected hosting target on the existing Hestia-managed VPS; remaining privacy/claims checks still apply before Systems treats the deployment as governance-complete.
 
 The Fourmere Hestia domain/vhost has been created by the Founder with no shared/global template changes reported. Treat the VPS as a shared production host: other production environments and Aster Lab must not be disturbed.
 
@@ -29,7 +29,7 @@ https://www.figma.com/design/sALZCt0EFcMfX0Nxn5sFWH
 - no catalogue, checkout, analytics, cookies or tracking;
 - Hestia VPS selected as hosting target;
 - no global Hestia template change is required for the current static site;
-- current build remains `noindex,nofollow`;
+- homepage discoverability is Founder-approved and the public homepage is configured `index,follow`;
 - public-readiness/privacy/claims review remains open.
 
 ## Shared-host rule
