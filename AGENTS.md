@@ -46,7 +46,7 @@ Not allowed:
 - Current production shape is plain HTML + CSS.
 - No external fonts, third-party scripts, remote images or runtime APIs.
 - Contact remains mailto-only: `aster@fourmere.co.uk`.
-- Preserve `noindex,nofollow` until publication is separately approved.
+- Homepage discoverability is Founder-approved as of 19 September 2026. Preserve indexability of the public homepage unless the Founder reverses that decision. The privacy page may remain noindex until its production notice is approved.
 - `privacy.html` is a holding page and must not be represented as publication-ready.
 
 ## Public copy direction
