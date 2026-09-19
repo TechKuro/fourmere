@@ -126,3 +126,7 @@ Remaining publication dependencies:
 - Director final rendered/public-readiness review.
 
 Founder External Communication Gate remains in force.
+
+## V3.1 brand polish
+
+Added consistent vector branding, local favicon/app assets, a browser-mode manifest and social image metadata. Refined wordmark spacing and footer rhythm, with a quiet F motif in the contact block. Fixed a literal backslash-n in homepage metadata. No new substantive sections or runtime dependencies. See `docs/VERIFICATION_V3_1.md` for checks and the outstanding live robots.txt replacement/cache refresh.

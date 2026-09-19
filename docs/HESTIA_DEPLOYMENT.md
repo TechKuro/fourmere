@@ -62,6 +62,8 @@ Only publish the browser artifacts required by the site, currently:
 - `styles.css`
 - `privacy.html` — Fourmere-specific production-policy draft adapted from Exilier Limited's existing privacy structure; Finance & Governance verification remains required before governance completion
 - referenced local files under `assets/`
+- `favicon.ico`, `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`, `site.webmanifest`
+- `robots.txt` and `sitemap.xml`
 
 Repository-only files such as `AGENTS.md`, `README.md`, `docs/`, Git metadata and internal implementation records must not be web-accessible.
 
