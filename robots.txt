@@ -1,0 +1,1 @@
+User-agent: *\nAllow: /\n\nSitemap: https://fourmere.co.uk/sitemap.xml\n
